@@ -87,6 +87,17 @@ header.hero {
   gap: 24px;
   margin-bottom: 20px;
 }
+.avatar-link {
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 0;
+  flex-shrink: 0;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.avatar-link:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 0 3px var(--accent-dim);
+}
 .avatar {
   width: 96px;
   height: 96px;
@@ -107,7 +118,6 @@ header.hero .tagline {
   margin: 0;
   font-weight: 500;
 }
-
 /* Contact strip */
 .contact {
   display: flex;
