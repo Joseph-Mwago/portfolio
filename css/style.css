@@ -275,7 +275,7 @@ footer a:hover { color: var(--accent-hover); }
     --accent: #6b2140; --accent-hover: #6b2140; --border: #ddd;
   }
   body { font-size: 11pt; }
-  .topnav, .project-links { display: none !important; }
+  .topnav, .project-links, .video-embed, .video-grid, .tabs, .slideshow { display: none !important; }
   header.hero { padding: 0 0 20px; }
   section { padding: 16px 0; page-break-inside: avoid; }
   a { color: #000 !important; }
