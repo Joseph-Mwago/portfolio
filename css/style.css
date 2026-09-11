@@ -381,7 +381,9 @@ footer a:hover { color: var(--accent-hover); }
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 16px;
 }
-.video-item {
+
+.video-item,
+.video-embed {
   position: relative;
   aspect-ratio: 16 / 9;
   background: var(--surface);
@@ -389,7 +391,9 @@ footer a:hover { color: var(--accent-hover); }
   border-radius: 8px;
   overflow: hidden;
 }
-.video-item iframe {
+
+.video-item iframe,
+.video-embed iframe {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -397,6 +401,10 @@ footer a:hover { color: var(--accent-hover); }
   border: 0;
 }
 
+/* Home page hero video gets breathing room around it */
+.video-embed {
+  margin: 20px 0;
+}
 /* ============ Slideshow overlay ============ */
 .slideshow {
   display: none;
